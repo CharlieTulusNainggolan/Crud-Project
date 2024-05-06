@@ -96,7 +96,7 @@ class CatatanGUI extends JFrame {
         // Set text and background color for "Hapus" button
         JButton hapusButton = new JButton("Hapus"); 
         hapusButton.setForeground(Color.white);
-        hapusButton.setBackground(new Color(255, 78, 78));
+        hapusButton.setBackground(new Color(255, 0, 0));
 
 
         // Set layout
@@ -126,6 +126,7 @@ class CatatanGUI extends JFrame {
         JPanel listPanel = new JPanel(new BorderLayout());
 
         jumlahCatatanLabel = new JLabel("   Catatan Terdaftar : 0");
+        jumlahCatatanLabel.setForeground(new Color(255, 255, 255));
         listPanel.add(jumlahCatatanLabel, BorderLayout.NORTH);
         //listPanel.add(new JLabel("  Catatan Terdaftar :" + catatanApp.getCatatanList().size()), BorderLayout.NORTH);
         listPanel.add(new JScrollPane(catatanList), BorderLayout. CENTER);
